@@ -1,0 +1,266 @@
+.background {
+  /* background-color: black; */
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+z-index:0;
+  height: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hat {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .hat-top1 {
+  width: 200px;
+  height: 40px;
+  margin-top: -130px;
+  position: absolute;
+  background: red;
+} */
+
+.hat-top1  {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 200px solid red;
+  margin-top: -210px;
+  position: absolute;
+}
+
+.hat-top5 {
+  width: 50px;
+  height: 50px;
+  margin-top: -290px;
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  right: 20px;
+}
+
+
+.hat-border {
+  width: 220px;
+  height: 40px;
+  margin-top: -90px;
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+}
+
+.head {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #f1d995;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.eye1 {
+  background: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #f1d995;
+  justify-content: center;
+}
+
+.eye2 {
+  background: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #f1d995;
+  display: flex;
+  align-items: center;
+}
+
+.eyeball1 {
+  background: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.eyeball2 {
+  background: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.beard {
+  /* width: 220px;
+  height: 200px;
+  background: white; */
+  position: absolute;
+  /* margin-top: 100px;
+  border-radius: 20%; */
+  animation-name: nudge;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+
+.beard-ball {
+  width: 100px;
+  height: 100px;
+  background: grey;
+  position: absolute;
+  margin-top: -60px;
+  border-radius: 50%;
+  right: -120px;
+  animation-name: nudge1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.beard-ball2 {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  position: absolute;
+  margin-top: -60px;
+  left: -30px;
+  border-radius: 50%;
+}
+
+.beard-ball3 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  margin-top: -60px;
+  left: -80px;
+  border-radius: 50%;
+}
+
+.beard-ball4 {
+  width: 100px;
+  height: 100px;
+  background: pink;
+  position: absolute;
+  margin-top: -60px;
+  left: -120px;
+  border-radius: 50%;
+  animation-name: nudge2;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.beard-ball5 {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  position: absolute;
+  margin-top: 0px;
+  left: -100px;
+  border-radius: 50%;
+  animation-name: nudge4;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.beard-ball6 {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  position: absolute;
+  margin-top: 0px;
+  right: -110px;
+  border-radius: 50%;
+}
+
+.beard-ball7 {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  position: absolute;
+  margin-top: 0px;
+  left: -50px;
+  border-radius: 50%;
+  animation-name: nudge3;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.beard-ball8 {
+  width: 100px;
+  height: 100px;
+  background: black;
+  position: absolute;
+  margin-top: 40px;
+  right: -20px;
+  border-radius: 50%;
+}
+
+.beard-ball9 {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: absolute;
+  margin-top: 40px;
+  left: 0px;
+  border-radius: 50%;
+  animation-name: nudge5;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.beard-ball10 {
+  width: 100px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  margin-top: 90px;
+  right: -60px;
+  border-radius: 50%;
+}
+
+@keyframes nudge {
+    0% {margin-top: 100px;}
+    50% {margin-top: 105px;}
+    100% {margin-top: 110px;}
+}
+
+@keyframes nudge1 {
+    0% {margin-top: -60px;}
+    100% {margin-top: -65px;}
+}
+
+@keyframes nudge2 {
+    0% {margin-top: -60px;}
+    100% {margin-top: -65px;}
+}
+
+@keyframes nudge3 {
+    0% {margin-top: 0px;}
+    100% {margin-top: 10px;}
+}
+
+@keyframes nudge4 {
+    0% {left: -100px;}
+    100% {left: -110px;}
+}
+
+@keyframes nudge5 {
+    0% {left: 0px;}
+    100% {left: 10px;}
+}
+
+.body {
+  background: red;
+  border-radius: 20%;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
